@@ -1,0 +1,228 @@
+#menu-popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  display: none;
+  background-color: white;
+  font-family: "Mulish", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+}
+#menu-popup .fa-xmark {
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+#menu-popup #menu-popup-container {
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  transform: translate(-50%, -50%);
+}
+#menu-popup #menu-popup-container ul {
+  list-style: none;
+}
+#menu-popup #menu-popup-container ul li {
+  margin-bottom: 100px;
+}
+a {
+  color: black;
+}
+
+nav {
+  padding: 0px 50px 0px 20px;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(249, 249, 249);
+  z-index: 100;
+  box-shadow: 0px 0px 10px 3px #bcbcbc;
+}
+nav .logo-container {
+  cursor: pointer;
+}
+nav .logo-container #dot-logo {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  margin-right: 10px;
+  position: absolute;
+  left: 50px;
+  top: 18px;
+  -webkit-animation-name: dot-logo;
+          animation-name: dot-logo;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+nav .logo-container #signature-image {
+  height: 30px;
+  position: absolute;
+  left: 60px;
+  top: 15px;
+  -webkit-animation-name: signature;
+          animation-name: signature;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+nav .menu-container {
+  position: relative;
+}
+nav .menu-container ul li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 400;
+}
+nav .menu-container ul .about {
+  position: absolute;
+  right: 310px;
+  top: 8px;
+  transition: font-size 0.2s;
+  -webkit-animation-name: about;
+          animation-name: about;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+nav .menu-container ul .about:hover {
+  font-size: 22px;
+  font-weight: bold;
+}
+nav .menu-container ul .work {
+  position: absolute;
+  right: 160px;
+  top: 8px;
+  transition: font-size 0.2s;
+  -webkit-animation-name: work;
+          animation-name: work;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+nav .menu-container ul .work:hover {
+  font-size: 22px;
+  font-weight: bold;
+}
+nav .menu-container ul .contact {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  transition: font-size 0.2s;
+  -webkit-animation-name: contact;
+          animation-name: contact;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+nav .menu-container ul .contact:hover {
+  font-size: 22px;
+  font-weight: bold;
+}
+nav .menu-container .fa-bars {
+  font-size: 30px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+@-webkit-keyframes dot-logo {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+
+@keyframes dot-logo {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+@-webkit-keyframes signature {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 60px;
+  }
+}
+@keyframes signature {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 60px;
+  }
+}
+@-webkit-keyframes about {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 310px;
+  }
+}
+@keyframes about {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 310px;
+  }
+}
+@-webkit-keyframes work {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 160px;
+  }
+}
+@keyframes work {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 160px;
+  }
+}
+@-webkit-keyframes contact {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes contact {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@media (max-width: 900px) {
+  .menu-container ul {
+    display: none;
+  }
+  .menu-container .fa-bars {
+    visibility: visible !important;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+}/*# sourceMappingURL=nav-styles.css.map */

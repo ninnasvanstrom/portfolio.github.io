@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ninna Svanström</title>
+
+     <!-- CSS Styles -->
+     <link rel="stylesheet" href="styles/nav/nav-styles.css">
+     <link rel="stylesheet" href="styles/general/general-styles.css">
+     <link rel="stylesheet" href="styles/project/project-styles.css">
+
+     <!-- JavaScript -->
+    <script src="script/app.js"></script>
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Averia+Libre&family=Covered+By+Your+Grace&family=Mulish:wght@400;700&family=Nunito+Sans&family=Permanent+Marker&family=Poppins&display=swap" rel="stylesheet">
+
+
+         <!-- Title logo -->
+    <link rel="icon" href="images/dot-logo-modified.png" type="image/x-icon">
+</head>
+<body>
+    
+
+    <div id="top">
+
+        <!-- Header -->
+        <header>
+
+            <!-- Navigation bar -->
+            <nav id="navbar">
+                <!-- Logga -->
+                <a href="index.html">
+                    <div class="logo-container">
+                        <img src="images/dot-logo-modified.png" alt="logo" id="dot-logo">
+                        <img src="images/signature.png" alt="signature" id="signature-image">
+                    </div>
+                </a>
+
+                <!-- Meny -->
+                <div class="menu-container">
+                    <ul>
+                        <li class="about"><a href="index.html#top">about</a></li>
+                        <li class="work"><a href="index.html#work">work</a></li>
+                        <li class="contact"><a href="index.html#footer">contact</a></li>
+                    </ul>
+
+                    <div class="hamburger-menu-container">
+                        <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+                    </div>
+                </div>
+
+
+
+            </nav>
+
+        </header>
+
+    </div>
+
+
+    <div id="description">
+        <aside id="left-aside">
+            <h1>Quantified Self</h1>
+            <div class="project-tags" id="quantified-self-tags">
+                <ul>
+                    <li>
+                        InfoVis
+                    </li>
+                    <li>
+                        Graphic Design
+                    </li>
+                    <li>
+                        Resumé
+                    </li>
+                </ul>
+            </div>
+            <div id="project-description">
+                <p>
+                    Quantified Self is a collection of interactive information visualizations, presenting the audience with information and data about myself. It is a dynamic, artistic and exlporative alternative to a standard resumé. 
+                    <br><br>
+                    Each slide describes specific information about myself. The visual style and theme of each slide is inspired by a specific interest of mine (which is specified in the top left corner of each slide).
+                    <br><br>
+                    My goal with this design was to find a way to present important information about myself in a creative and artistic way. I wanted the presentation to be intimate, personal and to breathe me. I have a very strong love for aesthetics, atistery and drawing, and I saw this as an opportunity to explore my artistic side while staying within the scope of conveying data in a clear manner.    
+                </p>
+            </div>
+        </aside>
+
+        <aside id="right-aside">
+            <img src="images/projects/quantified-self.png" alt="project image" class="project-image">
+        </aside>
+    </div>
+
+    <section class="demos">
+        <!-- <h2>Demo</h2> -->
+        <div class="demo-container">
+            <div class="demo-description">
+                    <h3>Educational background <span class="symbol">&#9829;</span> Traveling</h3>
+                    <br>
+                    <p>My educational background is being presented in a drawing of a trajectory of my life. The locations and the departments are marked along the path, and the illustrations refer to the different locations. The viewer can hover over each bullet point which represents an educational milestone, and if they click on the name of the school, a dialog to the left appears which holds more information. This visualization is based on my passion for traveling.  
+                </p>
+            </div>
+            <div class="demo">
+            <video autoplay loop class="demo-media">
+                <source src="images/projects/project01-video1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+
+        <div class="demo-container">
+            <div class="demo-description">
+                
+                    <h3>Language knowledge <span class="symbol">&#9829;</span> Astrology</h3>
+                    <br>
+                    <p>My language knowledge is being presented through the phases of the moon. Each moon phase represents a language. The phase also corresponds to the level of my knowledge in that language, but if the viewer wants they may hover over each moon to specify that level of knowledge. This visualization is inspired by my reluctant yet curious fascination with astrology and hocus pocus.  
+                </p>
+            </div>
+            <div class="demo">
+            <video width="800" height="600" autoplay loop class="demo-media">
+                <source src="images/projects/project01-video2.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+
+        <div class="demo-container">
+            <div class="demo-description">
+                
+                    <h3>Cover letter <span class="symbol">&#9829;</span> Reading</h3>
+                    <br>
+                    <p>Instead of writing a cover letter I decided to ask friends, family and previous employers to describe me with some adjectives. Based on their answers I created this wordcloud. I further categorized each adjective into either ethos, pathos or logos, in order to easier distinguish between the different adjectives. When the viewer hovers over each category, it sets a background shadow behind it for pliancy. If the viewer selects a category, only the adjectives that belong to that category is being highlighted. When the viewer deselects the category, the wordcloud returns to its original state. This visualization is based on my love for reading and gaining new knowledge.
+                </p>
+            </div>
+            <div class="demo">
+            <video width="800" height="600" autoplay loop class="demo-media">
+                <source src="/projects/project01-video3.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+
+        <div class="demo-container">
+
+            <div class="demo-description">
+                
+                    <h3>Work experience <span class="symbol">&#9829;</span> Painting</h3>
+                    <br>
+                    <p>My work experience is being presented through a simple scatterplot, where the y-axis represents the year I started working at the workplace, and the x-axis represents the year that I quit working at the workplace. Thus, the location of the paint splashes (which represent the workplaces), are coordinates that says during what time period I was working at that job, If the user hovers over one of the paint splashes, they become enlarged and contain more specific information about the job. The different industries are color coded, and that is explicitly explained in the visualization as well. This visualization is based on my interest in painting.
+                </p>
+            </div>
+            <div class="demo">
+            <video width="800" height="600" autoplay loop class="demo-media">
+                <source src="images/projects/project01-video4.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+</body>
+</html>

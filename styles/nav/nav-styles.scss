@@ -1,0 +1,246 @@
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Covered By Your Grace', cursive;
+// font-family: 'Mulish', sans-serif;
+// font-family: 'Poppins', sans-serif;
+//font-family: 'Permanent Marker', cursive;
+
+
+
+#menu-popup {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 101;
+display: none;
+background-color: white;
+font-family: 'Mulish', sans-serif;
+text-transform: uppercase;
+text-align: center;
+font-size: 40px;
+
+.fa-xmark {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#menu-popup-container {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: 100px;
+
+        }
+
+        .menu-popup-about {
+
+
+        }
+
+        .menu-popup-work {
+
+
+        }
+
+        .menu-popup-contact {
+
+
+        }
+    }
+
+}
+
+}
+
+
+a {
+    color: black;
+}
+
+nav {
+    padding: 0px 50px 0px 20px;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(249, 249, 249);
+    z-index: 100;
+    box-shadow: 0px 0px 10px 3px #bcbcbc;
+
+
+    .logo-container {
+        cursor: pointer;
+
+        #dot-logo {
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            margin-right: 10px;
+            position: absolute;
+            left: 50px;
+            top: 18px;
+            animation-name: dot-logo;
+            animation-duration: 0.5s;
+        }
+
+            #signature-image {
+                height: 30px;
+                position: absolute;
+                left: 60px;
+                top: 15px;
+                animation-name: signature;
+                animation-duration: 1s;
+            }
+    
+        
+    }
+
+    .menu-container {
+        position: relative;
+
+        ul {
+
+            li {
+                display: inline-block;
+                margin-left: 70px;
+                margin-top: 10px;
+                margin-bottom: 13px;
+                font-family: 'Mulish', sans-serif;
+                font-size: 18px;
+                cursor: pointer;
+                font-weight: 400;
+            }
+
+            .about {
+                position: absolute;
+                right: 310px;
+                top: 8px;
+                transition: font-size 0.2s;
+                animation-name: about;
+                animation-duration: 0.5s;
+
+                &:hover {
+                    font-size: 22px;
+                    font-weight: bold;
+                  }
+
+
+            }
+
+            .work {
+                position: absolute;
+                right: 160px;
+                top: 8px;
+                transition: font-size 0.2s;
+                animation-name: work;
+                animation-duration: 0.5s;
+
+                &:hover {
+                    font-size: 22px;
+                    font-weight: bold;
+                  }
+
+
+            }
+
+            .contact {
+                position: absolute;
+                right: 0px;
+                top: 8px;
+                transition: font-size 0.2s;
+                animation-name: contact;
+                animation-duration: 0.5s;
+
+                &:hover {
+                    font-size: 22px;
+                    font-weight: bold;
+                  }
+
+
+            }
+            
+        }
+
+       
+
+        .fa-bars {
+            font-size: 30px;
+            visibility: hidden;
+            cursor: pointer;
+        
+        }
+    
+    }
+
+
+}
+
+
+
+//ANIMATIONS
+
+@keyframes dot-logo {
+    0%   {left:-30px;}
+    100% {left:50px;}
+  }
+
+  @keyframes signature {
+    0%   {left:-30px;}
+    100% {left:60px;}
+  }
+
+
+@keyframes about {
+    0%   {right:0px;}
+    100% {right:310px;}
+  }
+
+@keyframes work {
+    0%   {right:0px;}
+    100% {right:160px;}
+}
+
+@keyframes contact {
+    0%   {right:-50px;}
+    100% {right:0px;}
+}
+
+
+//MEDIA QUERIES
+@media (max-width: 900px) {
+
+
+    .menu-container {
+
+        ul {
+            display: none;
+
+        }
+
+        .fa-bars {
+            visibility: visible !important;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 15px;
+        
+        }
+    }
+    
+}
+
+
+
