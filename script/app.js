@@ -14,7 +14,7 @@ const contactSection = document.getElementById("footer");
 
 //Projects
 const quantifiedSelfImage = document.getElementById("quantified-self-image");
-const quantifiedSelffName = document.getElementById("project-one-name");
+const quantifiedSelfName = document.getElementById("project-one-name");
 const wehopImage = document.getElementById("wehop-image");
 const wehopName = document.getElementById("project-two-name");
 
@@ -28,12 +28,16 @@ workButton.addEventListener("click", goToWork);
 contactButton.addEventListener("click", goToWork);
 
 //Work section
-//(E) FUNCTIONS?
 quantifiedSelfImage.addEventListener("mouseover", showProjectOneName);
-quantifiedSelfImage.addEventListener("mouseout", hideProjecOnetName);
+quantifiedSelfImage.addEventListener("mouseout", hideProjecOneName);
+quantifiedSelfName.addEventListener("mouseover", showProjectOneName);
+quantifiedSelfName.addEventListener("mouseout", hideProjecOneName);
 
 wehopImage.addEventListener("mouseover", showProjectTwoName);
 wehopImage.addEventListener("mouseout", hideProjectTwoName);
+wehopName.addEventListener("mouseover", showProjectTwoName);
+wehopName.addEventListener("mouseout", hideProjectTwoName);
+
 
 
 //FUNCTIONS
@@ -81,19 +85,23 @@ window.onscroll = function () {
 
 //Work
 function showProjectOneName () {
-    quantifiedSelffName.style.display = "block";
+    quantifiedSelfName.style.display = "block";
+    quantifiedSelfImage.style.filter = 'brightness(50%)';
 }
 
-function hideProjecOnetName () {
-    quantifiedSelffName.style.display = "none";
+function hideProjecOneName () {
+    quantifiedSelfName.style.display = "none";
+    quantifiedSelfImage.style.filter = 'brightness(100%)';
 }
 
 function showProjectTwoName () {
     wehopName.style.display = "block";
+    wehopName.style.filter = 'brightness(50%)';
 }
 
 function hideProjectTwoName () {
     wehopName.style.display = "none";
+    wehopName.style.filter = 'brightness(100%)';
 }
 
 
