@@ -96,12 +96,12 @@ function hideProjecOneName () {
 
 function showProjectTwoName () {
     wehopName.style.display = "block";
-    wehopName.style.filter = 'brightness(50%)';
+    wehopImage.style.filter = 'brightness(50%)';
 }
 
 function hideProjectTwoName () {
     wehopName.style.display = "none";
-    wehopName.style.filter = 'brightness(100%)';
+    wehopImage.style.filter = 'brightness(100%)';
 }
 
 
