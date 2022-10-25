@@ -26,11 +26,6 @@
   height: 380px;
   cursor: pointer;
 }
-
-//#work .project .project-image:hover {
-//  filter: brightness(50%);
-//}
-
 #work .project .project-name {
   position: absolute;
   top: 38%;
@@ -49,5 +44,10 @@
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
+  }
+}
+@media (max-width: 413px) {
+  #work .project .project-image {
+    height: 300px !important;
   }
 }/*# sourceMappingURL=work-styles.css.map */
