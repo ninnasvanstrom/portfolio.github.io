@@ -366,4 +366,33 @@
   #grid-container #grid-item-6 .purple-line {
     left: 18px !important;
   }
+}
+@media (max-width: 414px) {
+  #top-section #description-container #description #description-headline #large-pink-line {
+    width: 150px !important;
+  }
+  #top-section #description-container #description #description-headline #large-pink-line-split {
+    width: 260px !important;
+    visibility: visible !important;
+  }
+}
+@media (max-width: 375px) {
+  #top-section #grid-container .grid-text {
+    font-size: 12px;
+  }
+  #top-section #grid-container #grid-item-1 {
+    width: 335px;
+  }
+  #top-section #grid-container #grid-item-2 {
+    width: 335px !important;
+  }
+  #top-section #grid-container #grid-item-3 {
+    width: 335px;
+  }
+  #top-section #grid-container #grid-item-4 {
+    width: 335px;
+  }
+  #top-section #grid-container #grid-item-5 {
+    width: 335px !important;
+  }
 }/*# sourceMappingURL=about.css.map */
