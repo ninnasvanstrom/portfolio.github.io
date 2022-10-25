@@ -367,7 +367,7 @@
     left: 18px !important;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 492px) {
   #top-section #description-container #description #description-headline #large-pink-line {
     width: 150px !important;
   }
@@ -376,12 +376,12 @@
     visibility: visible !important;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   #top-section #grid-container .grid-text {
     font-size: 12px;
   }
   #top-section #grid-container #grid-item-1 {
-    width: 335px;
+    width: 335px !important;
   }
   #top-section #grid-container #grid-item-2 {
     width: 335px !important;
