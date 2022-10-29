@@ -137,4 +137,54 @@ body {
   #description {
     padding-bottom: 700px;
   }
+}
+@media (max-width: 530px) {
+  #description #right-aside .project-image {
+    height: 200px;
+  }
+}
+@media (max-width: 470px) {
+  #description #right-aside .project-image {
+    height: 150px;
+  }
+  #description .project-tags ul li {
+    background-color: #FF72A5;
+    padding: 5px 10px !important;
+    margin-right: 20px;
+    width: 100px !important;
+    font-family: "Mulish", sans-serif;
+    font-size: 10px !important;
+    color: white;
+  }
+}
+@media (max-width: 460px) {
+  #description {
+    padding-bottom: 800px;
+  }
+  .demos .demo-container .demo {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 420px) {
+  #description {
+    padding-bottom: 900px;
+  }
+}
+@media (max-width: 400px) {
+  #description {
+    padding-bottom: 1000px;
+  }
+  .demos .demo-container .demo {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 380px) {
+  #description {
+    padding-bottom: 1200px;
+  }
+}
+@media (max-width: 340px) {
+  #description {
+    padding-bottom: 1400px;
+  }
 }/*# sourceMappingURL=project-styles.css.map */
