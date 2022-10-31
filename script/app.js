@@ -17,6 +17,8 @@ const quantifiedSelfImage = document.getElementById("quantified-self-image");
 const quantifiedSelfName = document.getElementById("project-one-name");
 const wehopImage = document.getElementById("wehop-image");
 const wehopName = document.getElementById("project-two-name");
+const discopopImage = document.getElementById("discopop-image");
+const discopopName = document.getElementById("project-three-name");
 
 
 //EVENT LISTENERS
@@ -37,6 +39,11 @@ wehopImage.addEventListener("mouseover", showProjectTwoName);
 wehopImage.addEventListener("mouseout", hideProjectTwoName);
 wehopName.addEventListener("mouseover", showProjectTwoName);
 wehopName.addEventListener("mouseout", hideProjectTwoName);
+
+discopopImage.addEventListener("mouseover", showProjectThreeName);
+discopopImage.addEventListener("mouseout", hideProjectThreeName);
+discopopName.addEventListener("mouseover", showProjectThreeName);
+discopopName.addEventListener("mouseout", hideProjectThreeName);
 
 
 
@@ -102,6 +109,16 @@ function showProjectTwoName () {
 function hideProjectTwoName () {
     wehopName.style.display = "none";
     wehopImage.style.filter = 'brightness(100%)';
+}
+
+function showProjectThreeName () {
+    discopopName.style.display = "block";
+    discopopImage.style.filter = 'brightness(50%)';
+}
+
+function hideProjectThreeName () {
+    discopopName.style.display = "none";
+    discopopImage.style.filter = 'brightness(100%)';
 }
 
 
